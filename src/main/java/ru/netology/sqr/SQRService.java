@@ -1,10 +1,10 @@
 package ru.netology.sqr;
 
 public class SQRService {
-    public int limitedSquaring(int number) {
+    public int limitedSquaring(int lowerLimit, int upperLimit) {
         int output = 0;
-        for (int i = number; i >= 10 && i <= 99; i++) {
-            if (i * i >= 200 && i * i <= 300) {
+        for (int i = 10; i >= 10 && i <= 99; i++) {
+            if (i * i >= lowerLimit && i * i <= upperLimit) {
                 output = output + 1;
             }
         }
