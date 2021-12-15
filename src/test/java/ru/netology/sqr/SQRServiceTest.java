@@ -7,6 +7,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class SQRServiceTest {
 
     @Test
-    void limitedSquaring() {
+    void shouldLimitedSquaring() {
+        SQRService service = new SQRService();
+        int expected = 3;
+        int actual = service.limitedSquaring(200,300);
+        assertEquals(expected,actual);
     }
 }
